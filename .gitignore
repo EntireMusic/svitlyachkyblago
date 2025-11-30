@@ -1,0 +1,23 @@
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+dist/
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.swp
+
+# Python
+__pycache__/
+*.pyc
