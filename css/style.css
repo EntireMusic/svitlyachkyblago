@@ -4,54 +4,101 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #FEFEFE; /* мягкий светлый фон */
+  background-color: #FFFCF5; /* мягкий светлый фон */
   color: #333;
 }
 
 a {
   text-decoration: none;
-  color: #FFB74D; /* теплый оранжевый акцент */
+  color: #ffbb00; /* теплый оранжевый акцент */
 }
 
 a:hover {
-  color: #FF9800;
+  color: #FB9800;
 }
 
 /* Шапка */
+/* Общие стили шапки */
 header {
-  background-color: #F6F6F6;
-  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Логотип */
 header .logo img {
-  height: 60px;      /* размер логотипа по высоте */
-  width: 60px;       /* желательно указать одинаковую ширину */
-  border-radius: 50%; /* делает изображение круглым */
-  object-fit: cover;  /* чтобы картинка не деформировалась */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-header nav ul {
-  list-style: none;
+/* Основная навигация */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Ссылки меню */
+.nav-links {
   display: flex;
   gap: 25px;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
-header nav ul li a {
-  font-weight: bold;
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #0049b1;
+}
+
+/* Переключение языков */
+.lang-switcher {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+
+.lang-switcher a {
+  text-decoration: none;
   font-size: 16px;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+/* Активный язык */
+.lang-switcher a.active {
+  background: #0049b1;
+  color: white;
+}
+
+/* Наведение */
+.lang-switcher a:hover {
+  background: #e7f3ff;
+  color: #0049b1;
 }
 
 /* Главный баннер */
 .hero {
   text-align: center;
   padding: 30px 20px;
-  background-color: #FFF3E0; /* пастельный теплый фон */
+  background-color: #FEFEFE; /* новый мягкий фон */
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 .hero img {
@@ -61,9 +108,10 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
+
 .hero h1 {
   font-size: 2rem;
-  color: #FF9800;
+  color: #ffbb00;
   margin-bottom: 10px;
 }
 
