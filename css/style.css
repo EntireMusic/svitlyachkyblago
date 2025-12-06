@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #FFF9F0; /* мягкий светлый фон */
+  background-color: #FEFEFE; /* мягкий светлый фон */
   color: #333;
 }
 
@@ -19,7 +19,7 @@ a:hover {
 
 /* Шапка */
 header {
-  background-color: #ffffff;
+  background-color: #F6F6F6;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,10 @@ header {
 }
 
 header .logo img {
-  height: 60px;
+  height: 60px;      /* размер логотипа по высоте */
+  width: 60px;       /* желательно указать одинаковую ширину */
+  border-radius: 50%; /* делает изображение круглым */
+  object-fit: cover;  /* чтобы картинка не деформировалась */
 }
 
 header nav ul {
@@ -47,7 +50,7 @@ header nav ul li a {
 /* Главный баннер */
 .hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 30px 20px;
   background-color: #FFF3E0; /* пастельный теплый фон */
 }
 
